@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+</head>
+<body>
+    <div class="container body-content">
+        <h1>{{content.title}}</h1>
+        {{#if error}}
+        <h2>{{error.message}}</h2>
+        <pre>{{error.stack}}</pre>  
+        {{/if}}
+    </div>
+</body>
+</html>

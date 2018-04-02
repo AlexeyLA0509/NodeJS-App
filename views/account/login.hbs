@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="App">
+    <meta property="og:url" content="AbsoluteUri">
+    <meta property="og:title" content="Login">
+    <meta name="application-name" content="App">
+    <title>Login</title>
+    <link href="/static/lib/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" /> {{#each styles}}
+    <link href="{{href}}" rel="stylesheet" /> {{/each}} {{#each scripts}}
+    <script src="{{src}}"></script> {{/each}}
+</head>
+
+<body>
+    <div class="navbar app-login-page-navbar app-navbar-absolute">
+        <div class="container">
+            <a class="navbar-brand" href="/">App</a>
+        </div>
+    </div>
+    <div class="app-wrapper app-wrapper-full-page">
+        <div class="app-full-page app-login-page">
+            <div class="app-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <div class="app-card">
+                                <div class="app-card-header text-center">Login</div>
+                                <div class="app-card-body">
+                                    <div class="form-group row">
+                                        <label id="lErrorText" class="app-error-text" style="display: none"></label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label" for="tbEmail">Email</label>
+                                        <div class="col-sm-9">
+                                            <input id="tbEmail" class="form-control" type="email" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label" for="tbPassword">Password</label>
+                                        <div class="col-sm-9">
+                                            <input id="tbPassword" class="form-control" type="password" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-offset-3 col-sm-9">
+                                            <div class="form-check">
+                                                <input id="chbRememberMe" class="form-check-input" type="checkbox" />
+                                                <label class="form-check-label" for="chbRememberMe">Remember me</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="app-card-footer text-center">
+                                    <button id="btnLogin" class="btn btn-primary app-transition-all" type="button">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-content-footer container-fluid">
+                <footer>
+                    <p>&copy; 2018 App</p>
+                </footer>
+            </div>
+            <div class="app-full-page-background" style="display: block; background-image: url(/static/images/login-full-screen-image.png)"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

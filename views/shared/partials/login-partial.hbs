@@ -1,0 +1,20 @@
+<ul class="navbar-nav my-2 my-lg-0">
+    {{#if user}}
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="ndUserMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{user.name}}</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/admin/dashboard">Dashboard</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Change password</a>
+            <a id="ndUMLogout" class="dropdown-item">Logout</a>
+        </div>
+    </li>
+    {{else}}
+    <li class="nav-item">
+        <a class="nav-link" href="/account/register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/account/login">Login</a>
+    </li>
+    {{/if}}
+</ul>
