@@ -33,7 +33,7 @@ const Users = function (db) {
         this.users = await this.dbGetUsers();
 
         $isInitialized = true;
-    }
+    };
 
 };
 

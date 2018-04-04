@@ -41,12 +41,12 @@ const Application = function () {
         return _$root;
     });
 
-    this.appStart = () => {
+    this.appStart = async () => {
         if ($appStarted) {
             return false;
         }
 
-        $db.initialize();
+        await $db.initialize();
 
         $appStarted = true;
 

@@ -150,8 +150,8 @@ function onEndRequest(context) {
 /**
  * Startup
  */
-(function () {
-    app.appStart();
+(async function () {
+    await app.appStart();
 
     configure();
 

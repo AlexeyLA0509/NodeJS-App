@@ -29,13 +29,14 @@ const DatabaseManagmentSystem = function (app) {
         return $isInitialized;
     });
 
-    this.initialize = () => {
+    this.initialize = async () => {
         if ($isInitialized) {
             return;
         }
 
-        $users.initialize();
+        await $users.initialize();
 
+        $isInitialized = true;
     };
 
 };
