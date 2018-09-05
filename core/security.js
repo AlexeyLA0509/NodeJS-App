@@ -166,7 +166,7 @@ security.authenticateUser = async function (context, user, password, rememberMe)
         user.lastLoginDateTime = currentTime;
         user.lastActivityDateTime = currentTime;
         user.previousIp = user.currentIp;
-        user.currentIp = context.connection.remoteIpAddress
+        user.currentIp = context.connection.remoteIpAddress;
 
         //context.user = new UserIdentity(user.userName, user, null, true);
 

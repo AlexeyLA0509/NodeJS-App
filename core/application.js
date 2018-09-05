@@ -3,7 +3,7 @@
 const express = require('express');
 //const connect = require('connect');
 const systemUtils = require('./system/utils');
-const Db = require('./database/database-managment-system');
+const Db = require('./database/database-management-system');
 const AppResoursesPaths = require('./data/app-resourses-paths');
 
 const Application = function () {

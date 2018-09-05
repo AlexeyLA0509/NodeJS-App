@@ -10,7 +10,7 @@ const ConnectionInfo = require('./connection-info');
 class HttpContext {
     /**
      * 
-     * @param {ClientRequest} request 
+     * @param {IncomingMessage} request 
      * @param {ServerResponse} response 
      */
     constructor(app, request, response) {
@@ -24,9 +24,6 @@ class HttpContext {
         let $connection = null;
 
         Object.defineProperty(this, 'application', {
-            /**
-             * Gets the ClientRequest object for the current HTTP request.
-             */
             get: () => {
                 return app;
             },
@@ -35,7 +32,7 @@ class HttpContext {
 
         Object.defineProperty(this, 'request', {
             /**
-             * Gets the ClientRequest object for the current HTTP request.
+             * Gets the IncomingMessage object for the current HTTP request.
              */
             get: () => {
                 return $request;
@@ -59,9 +56,6 @@ class HttpContext {
         this.user = null;
 
         Object.defineProperty(this, 'cookies', {
-            /**
-             * Gets the ClientRequest object for the current HTTP request.
-             */
             get: () => {
                 return $cookies;
             },

@@ -7,7 +7,7 @@ const Users = require('../data/users');
  * 
  * @param {Application} app
  */
-const DatabaseManagmentSystem = function (app) {
+const DatabaseManagementSystem = function (app) {
     let $app = app;
 
     this.CONNECTION_STRING = 'mongodb://localhost:27017';
@@ -41,4 +41,4 @@ const DatabaseManagmentSystem = function (app) {
 
 };
 
-module.exports = DatabaseManagmentSystem;
+module.exports = DatabaseManagementSystem;
