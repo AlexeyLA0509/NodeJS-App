@@ -9,7 +9,7 @@ const ConnectionInfo = require('./connection-info');
  */
 class HttpContext {
     /**
-     * 
+     * @param {Application} app
      * @param {IncomingMessage} request 
      * @param {ServerResponse} response 
      */
