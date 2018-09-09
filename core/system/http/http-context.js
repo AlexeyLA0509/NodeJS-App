@@ -25,7 +25,7 @@ class HttpContext {
 
         Object.defineProperty(this, 'application', {
             get: () => {
-                return app;
+                return $app;
             },
             enumerable: true
         });
